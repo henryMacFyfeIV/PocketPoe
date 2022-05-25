@@ -5,6 +5,9 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "source": "${workspaceRoot}/",
+            "output": "${workspaceRoot}/Output.pdx",
+            "sdkPath": "/Developer/PlaydateSDK",
             "type": "playdate",
             "request": "launch",
             "name": "Debug simulator",

@@ -1,7 +1,4 @@
 {
-    "sourcePath": "${workspaceRoot}/",
-    "outputPath": "${workspaceRoot}/Output.pdx",
-    "sdkPath": "/Developer/PlaydateSDK",
     "Lua.runtime.path": ["/Developer/PlaydateSDK"],
     "Lua.workspace.library": [
         "/Developer/PlaydateSDK/CoreLibs"
