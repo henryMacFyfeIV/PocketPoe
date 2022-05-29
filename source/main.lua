@@ -46,7 +46,7 @@ function chunkStory(storyContent)
 			table.remove(storyWords, 1)
 			break
 		else 
-			while (#storyWords > 1 or playdate.graphics.getTextSize(newLine .. storyWords[1]) < 400)  do
+			while (#storyWords > 1 and playdate.graphics.getTextSize(newLine .. storyWords[1]) < 400)  do
 				newLine = newLine .. storyWords[1] .. " "
 				table.remove(storyWords, 1)
 			end
@@ -97,7 +97,7 @@ end
 
 -- 
 function drawPage(storyChunk, lineIndex)
-	print(storyChunk)
+	printTable(storyChunk)
 	local renderedPage = ""
 	-- loop through 12 starting at lineIndex, create string, render that string below!
 	local iterator = lineIndex
@@ -148,7 +148,7 @@ function playdate.update()
 	else -- draw book view
 		playdate.graphics.clear()
 		-- todo: get a page of text based on updown index
-		drawPage(books[cursor].storyChunk, 1)
+		drawPage(books[cursor].storyChunk, 2)
 	end
 end
 
