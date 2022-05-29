@@ -32,15 +32,28 @@ for storyFileKey, storyFileValue in pairs(storyFiles) do
 end
 
 function chunkStory(storyContent)
-	-- If I could split this into every "word" (actual word, .,:,) and \n then I could build 
-	-- story lines < 400 pretty easily. 
 	local storyWords = {}
-	-- why am I not seeing \n in storyWords
-	-- for w in storyContent:gmatch("%S+") do 
 	for w in storyContent:gmatch("%\n*%S+") do 
 		table.insert(storyWords, w)
 	end
-	printTable(storyWords)
+	-- I was told tables don't keep their order, but my console.printlines aregue otherwise
+	-- create lineChunks out of words. Each lineChunk should be either < 400 width or contain \n
+	local lineChunks = {}
+	while #storyWords > 1 do
+		local newLine = ""
+		if storyWords[1] == "\n" then
+			newLine = newLine .. storyWords[1]
+			table.remove(storyWords, 1)
+			break
+		else 
+			while (#storyWords > 1 or playdate.graphics.getTextSize(newLine .. storyWords[1]) < 400)  do
+				newLine = newLine .. storyWords[1] .. " "
+				table.remove(storyWords, 1)
+			end
+		end
+		table.insert(lineChunks, newLine)
+	end
+	return lineChunks
 end
 
 function createBooks(stories)
@@ -83,21 +96,28 @@ function drawBooks(shelfDimensions, stories)
 end
 
 -- 
-function drawPage(storyContent, pageIndex) 
-	playdate.graphics.drawTextInRect(storyContent, 0, 0, 400, 240, nil)
+function drawPage(storyChunk, lineIndex)
+	print(storyChunk)
+	local renderedPage = ""
+	-- loop through 12 starting at lineIndex, create string, render that string below!
+	local iterator = lineIndex
+	local iteratorTerminator = lineIndex + 11
+	while iterator < iteratorTerminator do
+		renderedPage = renderedPage .. storyChunk[iterator]
+		iterator = iterator + 1
+	end
+	playdate.graphics.drawTextInRect(renderedPage, 0, 0, 400, 240, nil)
 end
 
 -- chunk stories.storyContent into stories.storyLines
 function chunkBooks(books) 
 	for bookKey, bookValue in pairs(books) do
-		books.storyChunk = chunkStory(bookValue.storyContent)
+		bookValue.storyChunk =  chunkStory(bookValue.storyContent)
 	end
 end
 
 createBooks(stories)
 chunkBooks(books)
-
--- printTable(books)
 
 local previousCursor = 1
 local cursor = 2
@@ -128,7 +148,7 @@ function playdate.update()
 	else -- draw book view
 		playdate.graphics.clear()
 		-- todo: get a page of text based on updown index
-		drawPage(books[cursor].storyContent, pageIndex)
+		drawPage(books[cursor].storyChunk, 1)
 	end
 end
 
