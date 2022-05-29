@@ -13,6 +13,8 @@ local shelfDimensions = {
 	lineWidth = 3
 }
 
+local books = {}
+
 -- 	create stories out of directory
 local stories = {}
 local storyFiles = playdate.file.listFiles("stories/")
@@ -29,13 +31,24 @@ for storyFileKey, storyFileValue in pairs(storyFiles) do
 		})
 end
 
-local books = {}
+function chunkStory(storyContent)
+	-- If I could split this into every "word" (actual word, .,:,) and \n then I could build 
+	-- story lines < 400 pretty easily. 
+	local storyWords = {}
+	-- why am I not seeing \n in storyWords
+	-- for w in storyContent:gmatch("%S+") do 
+	for w in storyContent:gmatch("%\n*%S+") do 
+		table.insert(storyWords, w)
+	end
+	printTable(storyWords)
+end
+
 function createBooks(stories)
 	for storyKey, storyValue in pairs(stories) do
 		local newBook = {}
 		local bookHeight = math.random(100, 130)
 		local bookWidth = math.random(30, 50)
-		
+
 		if #books == 0 then
 			newBook = {
 				x = 5,
@@ -45,7 +58,7 @@ function createBooks(stories)
 				lineWidth = 4,
 				title = storyValue.fileHeader,
 				storyContent = storyValue.storyContent
-			}	
+			}
 		else
 			local lastBook = books[#books]
 			newBook = {
@@ -56,9 +69,8 @@ function createBooks(stories)
 				lineWidth = 4,
 				title = storyValue.fileHeader,
 				storyContent = storyValue.storyContent
-			}	
+			}
 		end
-		
 		table.insert(books, newBook)
 	end
 end
@@ -72,39 +84,20 @@ end
 
 -- 
 function drawPage(storyContent, pageIndex) 
-	-- break into individual lines here based on size or |n or whatever. Then we draw as lines below?
-	-- print(playdate.graphics.getTextSize(storyContent))
-	
-	-- looks like each newline adds 20 to playdate.graphics.getTextSize(storyContent) 
-	
-	-- function like TurnStringIntoStrings
-	-- Need to get just enough lines consisting of whole words to 
-	-- left to right, append whole words into newLine until getText close enough to size
-	-- unless \n then immedietely start newLine
-	
-	-- grab 12 lines using pageIndex
-	
-	local testText = "howdy partner, I love you howdy partner, I love you  howdy partner, I"
-	print(testText)
-	print(playdate.graphics.getTextSize(testText))
-	
-	
 	playdate.graphics.drawTextInRect(storyContent, 0, 0, 400, 240, nil)
 end
 
-createBooks(stories)
-
 -- chunk stories.storyContent into stories.storyLines
-function chunkStoryContent(books) 
+function chunkBooks(books) 
 	for bookKey, bookValue in pairs(books) do
-		local storyLines = {}
-		-- we have a very long string called bookValue.storyContent with /n in it. 
-		
+		books.storyChunk = chunkStory(bookValue.storyContent)
 	end
 end
 
+createBooks(stories)
+chunkBooks(books)
 
-printTable(books)
+-- printTable(books)
 
 local previousCursor = 1
 local cursor = 2
@@ -139,6 +132,7 @@ function playdate.update()
 	end
 end
 
+-- buttons
 function playdate.leftButtonDown()
 	if cursor > 1 then
 		previousCursor = cursor ; 
