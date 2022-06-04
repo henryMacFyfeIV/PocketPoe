@@ -1,25 +1,3 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "type": "pdc",
-        "problemMatcher": ["$pdc-lua", "$pdc-external"],
-        "label": "Playdate: Build"
-      },
-      {
-        "type": "playdate-simulator",
-        "problemMatcher": ["$pdc-external"],
-        "label": "Playdate: Simulator"
-      },
-      {
-        "label": "Playdate: Build and Run (Simulator)",
-        "dependsOn": ["Playdate: Build", "Playdate: Simulator"],
-        "dependsOrder": "sequence",
-        "problemMatcher": [],
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        }
-      }
-    ]
-  }
+
+}

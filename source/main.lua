@@ -1,9 +1,9 @@
 import 'CoreLibs/object'
 import 'CoreLibs/graphics'
 
-
 playdate.display.setRefreshRate(14)
 
+local books = {}
 
 local gfx = playdate.graphics
 local screenWidth = playdate.display.getWidth()
@@ -16,25 +16,7 @@ local shelfDimensions = {
 	lineWidth = 3
 }
 
-local books = {}
-
--- 	create stories out of directory
-local stories = {}
-local storyFiles = playdate.file.listFiles("stories/")
-for storyFileKey, storyFileValue in pairs(storyFiles) do
-	local fileLocation = "stories/" .. storyFileValue
-	local file = playdate.file.open(fileLocation, playdate.file.kFileRead)
-	local fileHeader = file:readline()
-	file:close()
-	local file2 = playdate.file.open(fileLocation, playdate.file.kFileRead)
-	local storyContent = file2:read(999999999999999)
-	table.insert(stories, { 
-			storyContent = storyContent,
-			fileHeader = fileHeader 
-		})
-	file2:close()
-end
-
+-- don't delete, this formats txt files into playdate sized txt files.
 function chunkStory(storyContent)
 	local storyWords = {}
 	-- finds carriage returns and complete words with punctuation
@@ -42,6 +24,7 @@ function chunkStory(storyContent)
 		table.insert(storyWords, w)
 	end
 	local lineChunks = {}
+	print("START STORY")
 	while #storyWords > 1 do
 		local newLine = ""
 		if storyWords[1] == "\n" then
@@ -55,9 +38,11 @@ function chunkStory(storyContent)
 			end
 		end
 		table.insert(lineChunks, newLine)
+		print(newLine)
 	end
 	return lineChunks
 end
+
 
 function createBooks(stories)
 	for storyKey, storyValue in pairs(stories) do
@@ -74,6 +59,7 @@ function createBooks(stories)
 				lineWidth = 4,
 				title = storyValue.fileHeader,
 				storyContent = storyValue.storyContent,
+				storyChunk = storyValue.storyChunk,
 				lineIndex = 1
 			}
 		else
@@ -86,6 +72,7 @@ function createBooks(stories)
 				lineWidth = 4,
 				title = storyValue.fileHeader,
 				storyContent = storyValue.storyContent,
+				storyChunk = storyValue.storyChunk,
 				lineIndex = 1
 			}
 		end
@@ -118,8 +105,36 @@ function chunkBooks(books)
 	end
 end
 
+-- 	create stories out of directory
+local stories = {}
+local storyFiles = playdate.file.listFiles("stories/")
+
+for storyFileKey, storyFileValue in pairs(storyFiles) do
+	local fileLocation = "stories/" .. storyFileValue
+	local file = playdate.file.open(fileLocation, playdate.file.kFileRead)
+	local fileHeader = file:readline()
+	file:close()
+	local file2 = playdate.file.open(fileLocation, playdate.file.kFileRead)
+	local storyChunk = {}
+	local line = " "
+	while (line ~= nil) do
+		line = file2:readline()
+		if (line) then
+			table.insert(storyChunk, line .. "\n")
+		end 
+	end
+	table.insert(stories, { 
+			storyChunk = storyChunk,
+			fileHeader = fileHeader
+		})
+	file2:close()
+end
+
+--stories : {storyContent, fileHeader}
+
 createBooks(stories)
-chunkBooks(books)
+-- adds storyChunk to each book
+-- chunkBooks(books)
 
 local previousCursor = 1
 local cursor = 2
