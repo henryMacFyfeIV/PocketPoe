@@ -22,6 +22,8 @@
 
 ## Bugs:
 
-* takes a while to startup, I'm guessing the issue is parsing all the words out of stories at once maybe I can format the files like they are after the gmatch(), and just store those instead of the current txt files
+* ~~takes a while to startup, I'm guessing the issue is parsing all the words out of stories at once maybe I can format the files like they are after the gmatch(), and just store those instead of the current txt file~~
 
 * right now you can scroll past the end of a book, causing the program to crash
+
+* I've lost some text at the end of stories
