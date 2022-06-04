@@ -16,7 +16,7 @@
 
 * Find/Create a gothic font
 
-* title card
+* title card : PocketPoe in gothic font, pixelated Edgar Allen Poe portrait
 
 * hyper read mode
 

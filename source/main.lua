@@ -1,7 +1,9 @@
 import 'CoreLibs/object'
 import 'CoreLibs/graphics'
 
+
 playdate.display.setRefreshRate(14)
+
 
 local gfx = playdate.graphics
 local screenWidth = playdate.display.getWidth()
