@@ -16,34 +16,6 @@ local shelfDimensions = {
 	lineWidth = 3
 }
 
--- don't delete, this formats txt files into playdate sized txt files.
-function chunkStory(storyContent)
-	local storyWords = {}
-	-- finds carriage returns and complete words with punctuation
-	for w in storyContent:gmatch("%\n*%S+") do
-		table.insert(storyWords, w)
-	end
-	local lineChunks = {}
-	print("START STORY")
-	while #storyWords > 1 do
-		local newLine = ""
-		if storyWords[1] == "\n" then
-			newLine = newLine .. storyWords[1]
-			table.remove(storyWords, 1)
-			break
-		else 
-			while (#storyWords > 1 and playdate.graphics.getTextSize(newLine .. storyWords[1]) < 400)  do
-				newLine = newLine .. storyWords[1] .. " "
-				table.remove(storyWords, 1)
-			end
-		end
-		table.insert(lineChunks, newLine)
-		print(newLine)
-	end
-	return lineChunks
-end
-
-
 function createBooks(stories)
 	for storyKey, storyValue in pairs(stories) do
 		local newBook = {}
@@ -58,8 +30,8 @@ function createBooks(stories)
 				h = bookHeight,
 				lineWidth = 4,
 				title = storyValue.fileHeader,
-				storyContent = storyValue.storyContent,
 				storyChunk = storyValue.storyChunk,
+				chunkLength = #storyValue.storyChunk,
 				lineIndex = 1
 			}
 		else
@@ -71,8 +43,8 @@ function createBooks(stories)
 				h = bookHeight,
 				lineWidth = 4,
 				title = storyValue.fileHeader,
-				storyContent = storyValue.storyContent,
 				storyChunk = storyValue.storyChunk,
+			        chunkLength = #storyValue.storyChunk,
 				lineIndex = 1
 			}
 		end
@@ -98,12 +70,6 @@ function drawPage(storyChunk, lineIndex)
 	playdate.graphics.drawTextInRect(renderedPage, 0, 0, 400, 240, nil)
 end
 
--- chunk stories.storyContent into stories.storyLines
-function chunkBooks(books)
-	for bookKey, bookValue in pairs(books) do
-		bookValue.storyChunk =  chunkStory(bookValue.storyContent)
-	end
-end
 
 -- 	create stories out of directory
 local stories = {}
@@ -130,11 +96,7 @@ for storyFileKey, storyFileValue in pairs(storyFiles) do
 	file2:close()
 end
 
---stories : {storyContent, fileHeader}
-
 createBooks(stories)
--- adds storyChunk to each book
--- chunkBooks(books)
 
 local previousCursor = 1
 local cursor = 2
@@ -170,7 +132,10 @@ end
 -- buttons for page view
 function playdate.downButtonDown()
 	if not shelfView then
-		globalLineIndex += 1
+		-- todo: use cursor to check chunkLength 
+		if (globalLineIndex < books[cursor].chunkLength) then
+			globalLineIndex += 1
+		end
 	end
 end
 
