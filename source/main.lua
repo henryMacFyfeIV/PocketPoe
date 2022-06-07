@@ -64,7 +64,8 @@ function drawPage(storyChunk, lineIndex)
 	local iterator = lineIndex
 	local iteratorTerminator = lineIndex + 12
 	while iterator < iteratorTerminator do
-		renderedPage = renderedPage .. storyChunk[iterator]
+		nextLine = storyChunk[iterator] or ""
+		renderedPage = renderedPage .. nextLine
 		iterator = iterator + 1
 	end
 	playdate.graphics.drawTextInRect(renderedPage, 0, 0, 400, 240, nil)
@@ -131,16 +132,13 @@ end
 
 -- buttons for page view
 function playdate.downButtonDown()
-	if not shelfView then
-		-- todo: use cursor to check chunkLength 
-		if (globalLineIndex < books[cursor].chunkLength) then
-			globalLineIndex += 1
-		end
+	if not shelfView and globalLineIndex < books[cursor].chunkLength - 1 then
+		globalLineIndex += 1
 	end
 end
 
 function playdate.upButtonDown()
-	if not shelfView then
+	if not shelfView and globalLineIndex > 1 then
 		globalLineIndex -= 1
 	end
 end
@@ -148,12 +146,13 @@ end
 -- buttons for shelf view
 function playdate.leftButtonDown()
 	if cursor > 1 and shelfView then
-		previousCursor = cursor ;
-		cursor -= 1;
+		previousCursor = cursor
+		cursor -= 1
 		playdate.graphics.setColor(playdate.graphics.kColorWhite)
 		gfx.fillRect(30, 20, 330 , 60)
 	end
 end
+
 function playdate.rightButtonDown()
 	if cursor < #books and shelfView then
 		previousCursor = cursor ;
