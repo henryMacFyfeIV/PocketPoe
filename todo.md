@@ -1,5 +1,11 @@
 # Todo
 
+* proofread stories
+
+* ~~title card~~
+
+* reading savestate
+
 * ~~Add scrolling~~
 
 * Break shelf and book views out into files
