@@ -4,6 +4,10 @@
 
 * ~~title card~~
 
+* settings : view annotations, music toggle
+
+* storm, blizzard, waves sounds / music etc
+
 * reading savestate
 
 * ~~Add scrolling~~
