@@ -8,6 +8,7 @@ PocketPoe is a program for the [playdate console](https://play.date) that lets y
 I'm using vscode to build and debug PocketPoe with vscode extensions [Playdate by Orta](https://github.com/orta/vscode-playdate) and [Playdate Debug by midouest](https://github.com/midouest/vscode-playdate-debug).
 After installing the sdk, vscode, and the two extensions, you should be able to run .vscode/launch.json with the vscode debugger. 
 Alternatively, you can use the playdate compiler via the cli as described in the Inside Playdate doc linked above.~~ 
+
 Scratch the above for now, vscode debug config got messed up, just run this to compile and run.
 > rm -rf pocket Pocket\ Poe.pdx/ ; pdc source "Pocket Poe"; open Pocket\ Poe.pdx/ ; cp -r Pocket\ Poe.pdx/ ../../Disk/Games/
 
