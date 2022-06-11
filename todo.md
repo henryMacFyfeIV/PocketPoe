@@ -1,5 +1,7 @@
 # Todo
 
+## Features:
+
 * proofread stories
 
 * ~~title card~~
