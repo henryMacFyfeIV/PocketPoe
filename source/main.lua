@@ -71,7 +71,6 @@ function drawPage(storyChunk, lineIndex)
 	playdate.graphics.drawTextInRect(renderedPage, 0, 0, 400, 240, nil)
 end
 
-
 -- 	create stories out of directory
 local stories = {}
 local storyFiles = playdate.file.listFiles("stories/")
@@ -99,10 +98,19 @@ end
 
 createBooks(stories)
 
+-- retriving book savestate, or creating an empty book state
+local bookIndexes = playdate.datastore.read("bookIndexes")
+if bookIndexes == nil then
+	bookIndexes = {}
+	for tkey, story in pairs(books) do
+		bookIndexes[story.title] = story.lineIndex
+	end
+	playdate.datastore.write(bookIndexes, "bookIndexes")
+end
+
 local previousCursor = 1
 local cursor = 2
 local shelfView = true
-local globalLineIndex = 1
 function playdate.update()
 	if shelfView then
 		playdate.graphics.clear()
@@ -112,7 +120,7 @@ function playdate.update()
 		playdate.graphics.setColor(playdate.graphics.kColorBlack)
 		gfx.fillRect(book.x + 2, book.y - .5, book.w - 2, book.h - 1)
 
-		local title = gfx.drawText(book.title, 50, 30)
+		gfx.drawText(book.title, 50, 30)
 
 		-- draw shelf
 		gfx.drawRect(shelfDimensions.x, shelfDimensions.y, shelfDimensions.w, shelfDimensions.h, shelfDimensions.lineWidth)
@@ -126,20 +134,22 @@ function playdate.update()
 
 	else -- draw book view
 		playdate.graphics.clear()
-		drawPage(books[cursor].storyChunk, globalLineIndex)
+		drawPage(books[cursor].storyChunk, bookIndexes[books[cursor].title])
 	end
 end
 
 -- buttons for page view
 function playdate.downButtonDown()
-	if not shelfView and globalLineIndex < books[cursor].chunkLength - 1 then
-		globalLineIndex += 1
+	if not shelfView then
+		if bookIndexes[books[cursor].title] < books[cursor].chunkLength - 1 then
+			bookIndexes[books[cursor].title] += 1
+		end
 	end
 end
 
 function playdate.upButtonDown()
-	if not shelfView and globalLineIndex > 1 then
-		globalLineIndex -= 1
+	if not shelfView and bookIndexes[books[cursor].title] > 1 then
+		bookIndexes[books[cursor].title] -= 1
 	end
 end
 
@@ -167,5 +177,9 @@ end
 
 function playdate.BButtonDown()
 	shelfView = true
-	globalLineIndex = 1
+	playdate.datastore.write("bookIndexes", bookIndexes)
+end
+
+function playdate.gameWillTerminate()
+	playdate.datastore.write("bookIndexes", bookIndexes)
 end
