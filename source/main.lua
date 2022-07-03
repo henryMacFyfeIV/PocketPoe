@@ -134,6 +134,22 @@ function playdate.update()
 
 	else -- draw book view
 		playdate.graphics.clear()
+		local crankPos = playdate.getCrankChange()
+		print(crankPos)
+
+		if crankPos ~= 0.00 then
+			if crankPos > 0 then
+				if bookIndexes[books[cursor].title] < books[cursor].chunkLength - 1 then
+					bookIndexes[books[cursor].title] += 1
+				end
+			end
+			if crankPos < 0 then
+				if not shelfView and bookIndexes[books[cursor].title] > 1 then
+					bookIndexes[books[cursor].title] -= 1
+				end
+			end
+		end
+
 		drawPage(books[cursor].storyChunk, bookIndexes[books[cursor].title])
 	end
 end

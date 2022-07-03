@@ -2,25 +2,23 @@
 
 ## Features:
 
+* Add crank input for scrolling, selecting books
+
 * proofread stories
 
-* ~~title card~~
-
-* settings : view annotations, music toggle
+* Add a few more stories to fill up shelf
 
 * storm, blizzard, waves sounds / music etc
 
-* reading savestate
+* settings : view annotations, music toggle
+
+* ~~reading savestate~~
 
 * ~~Add scrolling~~
 
 * Break shelf and book views out into files
 
-* Add a few more stories to fill up shelf
-
-* Add scrolling save progress
-
-* Add crank input for scrolling, selecting books
+* ~~add scrolling save progress~~
 
 * Add annotations
 
@@ -28,7 +26,7 @@
 
 * Find/Create a gothic font
 
-* title card : PocketPoe in gothic font, pixelated Edgar Allen Poe portrait
+* ~~title card : PocketPoe in gothic font, pixelated Edgar Allen Poe portrait~~
 
 * hyper read mode
 

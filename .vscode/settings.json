@@ -1,13 +1,15 @@
 {
-    "Lua.runtime.path": ["/Developer/PlaydateSDK"],
-    "Lua.workspace.library": [
-        "/Developer/PlaydateSDK/CoreLibs"
+    "playdate.source": "source",
+    "playdate.output": "builds/out.pdx",
+    "Lua.diagnostics.globals": [
+        "playdate", "import"
+    ],
+    "Lua.diagnostics.disable": [
+        "undefined-global", "lowercase-global"
     ],
     "Lua.runtime.nonstandardSymbol": [
-        "+=",
-        "-=",
-        "*=",
-        "/="
-      ]
-      
+        "+=", "-=", "*=", "/="
+    ],
+    "Lua.workspace.library": ["$PLAYDATE_SDK_PATH/CoreLibs"],
+    "Lua.workspace.preloadFileSize": 1000
 }
