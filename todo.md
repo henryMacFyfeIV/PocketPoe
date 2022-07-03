@@ -2,7 +2,7 @@
 
 ## Features:
 
-* Add crank input for scrolling, selecting books
+* ~~Add crank input for scrolling~~
 
 * proofread stories
 

@@ -2,10 +2,10 @@ import 'CoreLibs/object'
 import 'CoreLibs/graphics'
 
 playdate.display.setRefreshRate(14)
+local gfx <const> = playdate.graphics
 
 local books = {}
 
-local gfx = playdate.graphics
 local screenWidth = playdate.display.getWidth()
 local screenHeight = playdate.display.getHeight()
 local shelfDimensions = {
@@ -68,7 +68,7 @@ function drawPage(storyChunk, lineIndex)
 		renderedPage = renderedPage .. nextLine
 		iterator = iterator + 1
 	end
-	playdate.graphics.drawTextInRect(renderedPage, 0, 0, 400, 240, nil)
+	gfx.drawTextInRect(renderedPage, 0, 0, 400, 240, nil)
 end
 
 -- 	create stories out of directory
@@ -113,11 +113,11 @@ local cursor = 2
 local shelfView = true
 function playdate.update()
 	if shelfView then
-		playdate.graphics.clear()
+		gfx.clear()
 
 		-- color in selected book
 		local book = books[cursor]
-		playdate.graphics.setColor(playdate.graphics.kColorBlack)
+		gfx.setColor(gfx.kColorBlack)
 		gfx.fillRect(book.x + 2, book.y - .5, book.w - 2, book.h - 1)
 
 		gfx.drawText(book.title, 50, 30)
@@ -129,11 +129,11 @@ function playdate.update()
 
 		-- uncolor in last selected book
 		local lastBook = books[previousCursor]
-		playdate.graphics.setColor(playdate.graphics.kColorWhite)
+		gfx.setColor(gfx.kColorWhite)
 		gfx.fillRect(lastBook.x + 2, lastBook.y - .5, lastBook.w - 2 , lastBook.h - 1)
 
 	else -- draw book view
-		playdate.graphics.clear()
+		gfx.clear()
 		local crankPos = playdate.getCrankChange()
 		print(crankPos)
 
@@ -174,7 +174,7 @@ function playdate.leftButtonDown()
 	if cursor > 1 and shelfView then
 		previousCursor = cursor
 		cursor -= 1
-		playdate.graphics.setColor(playdate.graphics.kColorWhite)
+		gfx.setColor(gfx.kColorWhite)
 		gfx.fillRect(30, 20, 330 , 60)
 	end
 end
@@ -183,7 +183,7 @@ function playdate.rightButtonDown()
 	if cursor < #books and shelfView then
 		previousCursor = cursor ;
 		cursor += 1;
-		playdate.graphics.setColor(playdate.graphics.kColorWhite)
+		gfx.setColor(gfx.kColorWhite)
 		gfx.fillRect(30, 20, 330 , 60)
 	end
 end
