@@ -199,3 +199,31 @@ end
 function playdate.gameWillTerminate()
 	playdate.datastore.write("bookIndexes", bookIndexes)
 end
+
+function chunkStory()
+
+	local storyWords = {}
+	-- finds carriage returns and complete words with punctuation
+	for w in storyContent:gmatch("%\n*%S+") do
+		table.insert(storyWords, w)
+	end
+	local lineChunks = {}
+	print("START STORY")
+	while #storyWords > 1 do
+		local newLine = ""
+		if storyWords[1] == "\n" then
+			newLine = newLine .. storyWords[1]
+			table.remove(storyWords, 1)
+			break
+		else 
+			while (#storyWords > 1 and playdate.graphics.getTextSize(newLine .. storyWords[1]) < 400)  do
+				newLine = newLine .. storyWords[1] .. " "
+				table.remove(storyWords, 1)
+			end
+		end
+		table.insert(lineChunks, newLine)
+		print(newLine)
+	end
+	return lineChunks
+end
+
