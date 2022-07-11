@@ -135,7 +135,6 @@ function playdate.update()
 	else -- draw book view
 		gfx.clear()
 		local crankPos = playdate.getCrankChange()
-		print(crankPos)
 
 		if crankPos ~= 0.00 then
 			if crankPos > 0 then
@@ -192,6 +191,9 @@ function playdate.AButtonDown()
 end
 
 function playdate.BButtonDown()
+	if shelfView then
+		chunkStories()
+	end
 	shelfView = true
 	playdate.datastore.write("bookIndexes", bookIndexes)
 end
@@ -200,30 +202,49 @@ function playdate.gameWillTerminate()
 	playdate.datastore.write("bookIndexes", bookIndexes)
 end
 
-function chunkStory()
-
-	local storyWords = {}
-	-- finds carriage returns and complete words with punctuation
-	for w in storyContent:gmatch("%\n*%S+") do
-		table.insert(storyWords, w)
-	end
-	local lineChunks = {}
-	print("START STORY")
-	while #storyWords > 1 do
-		local newLine = ""
-		if storyWords[1] == "\n" then
-			newLine = newLine .. storyWords[1]
-			table.remove(storyWords, 1)
-			break
-		else 
-			while (#storyWords > 1 and playdate.graphics.getTextSize(newLine .. storyWords[1]) < 400)  do
-				newLine = newLine .. storyWords[1] .. " "
-				table.remove(storyWords, 1)
-			end
+-- can be used to add stories. just place them in storiesTxt as text files. 
+-- the result of this, the formatted stories, can be found here ~/PlaydateSDK/Disk/Data/'Pocket Poe'.
+function chunkStories()
+	local rawFiles = playdate.file.listFiles("storiesTxt")
+	for _, rawFileName in pairs(rawFiles) do
+		local rawFile = playdate.file.open("storiesTxt/"..rawFileName)
+		local rawStoryContent = rawFile:read(99999999)
+		rawFile:close()
+		local storyWords = {}
+		-- finds carriage returns and complete words with punctuation
+		for w in rawStoryContent:gmatch("%\n*%S+") do
+			table.insert(storyWords, w)
 		end
-		table.insert(lineChunks, newLine)
-		print(newLine)
+
+		local lineChunks = {}
+		while #storyWords > 1 do
+			local newLine = ""
+			if storyWords[1] == "\n" then
+				newLine = newLine .. storyWords[1]
+				table.remove(storyWords, 1)
+				break
+			else 
+				while (#storyWords > 1 and playdate.graphics.getTextSize(newLine .. storyWords[1]) < 400)  do
+					newLine = newLine .. storyWords[1] .. " "
+					table.remove(storyWords, 1)
+				end
+			end
+			table.insert(lineChunks, newLine)
+		end
+		
+		playdate.file.mkdir("./storiesFormatted/")
+		local formattedFile = playdate.file.open("./storiesFormatted/"..rawFileName..".txt", playdate.file.kFileWrite)
+		
+		while #lineChunks > 0 do
+			print("adding lines to formatted file")
+			local formattedLine = table.remove(lineChunks, 1)
+			print(formattedLine)
+			formattedFile:write(formattedLine.."\n")
+		end
+
+		formattedFile:close()
 	end
-	return lineChunks
+	print("wrote all files, nice")
+
 end
 
