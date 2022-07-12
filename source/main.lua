@@ -208,7 +208,7 @@ function chunkStories()
 	local rawFiles = playdate.file.listFiles("storiesTxt")
 	for _, rawFileName in pairs(rawFiles) do
 		local rawFile = playdate.file.open("storiesTxt/"..rawFileName)
-		local rawStoryContent = rawFile:read(99999999)
+		local rawStoryContent = rawFile:read(999999999999999)
 		rawFile:close()
 		local storyWords = {}
 		-- finds carriage returns and complete words with punctuation
