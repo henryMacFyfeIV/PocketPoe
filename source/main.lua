@@ -233,18 +233,15 @@ function chunkStories()
 		end
 		
 		playdate.file.mkdir("./storiesFormatted/")
-		local formattedFile = playdate.file.open("./storiesFormatted/"..rawFileName..".txt", playdate.file.kFileWrite)
+		local formattedFile = playdate.file.open("./storiesFormatted/"..rawFileName, playdate.file.kFileWrite)
 		
 		while #lineChunks > 0 do
-			print("adding lines to formatted file")
 			local formattedLine = table.remove(lineChunks, 1)
-			print(formattedLine)
 			formattedFile:write(formattedLine.."\n")
 		end
 
 		formattedFile:close()
 	end
-	print("wrote all files, nice")
 
 end
 
