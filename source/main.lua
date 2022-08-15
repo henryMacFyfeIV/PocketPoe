@@ -6,6 +6,11 @@ local gfx <const> = playdate.graphics
 
 local books = {}
 
+local filePlayer = playdate.sound.fileplayer.new("rain", 1000)
+
+local filePlayerOn = true
+filePlayer:play(1)
+
 local screenWidth = playdate.display.getWidth()
 local screenHeight = playdate.display.getHeight()
 local shelfDimensions = {
@@ -68,7 +73,7 @@ function drawPage(storyChunk, lineIndex)
 		renderedPage = renderedPage .. nextLine
 		iterator = iterator + 1
 	end
-	gfx.drawTextInRect(renderedPage, 0, 0, 400, 240, nil)
+	gfx.drawTextInRect(renderedPage, 5, 5, 395, 235, nil)
 end
 
 -- 	create stories out of directory
@@ -192,7 +197,13 @@ end
 
 function playdate.BButtonDown()
 	if shelfView then
-		chunkStories()
+		if filePlayerOn then
+		    filePlayer:stop()
+		    filePlayerOn = false
+		else
+		    filePlayer:play(50)
+		    filePlayerOn = true
+        end
 	end
 	shelfView = true
 	playdate.datastore.write("bookIndexes", bookIndexes)
@@ -222,9 +233,9 @@ function chunkStories()
 			if storyWords[1] == "\n" then
 				newLine = newLine .. storyWords[1]
 				table.remove(storyWords, 1)
-				break
+                break
 			else 
-				while (#storyWords > 1 and playdate.graphics.getTextSize(newLine .. storyWords[1]) < 400)  do
+				while (#storyWords > 1 and playdate.graphics.getTextSize(newLine .. storyWords[1]) < 389)  do
 					newLine = newLine .. storyWords[1] .. " "
 					table.remove(storyWords, 1)
 				end
