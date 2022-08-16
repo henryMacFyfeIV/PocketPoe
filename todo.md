@@ -6,9 +6,9 @@
 
 * proofread stories
 
-* Add a few more stories to fill up shelf
+* ~~Add a few more stories to fill up shelf~~
 
-* storm, blizzard, waves sounds / music etc
+* ~~storm, blizzard, waves sounds / music etc~~
 
 * settings : view annotations, music toggle
 
@@ -37,3 +37,7 @@
 * ~~right now you can scroll past the end of a book, causing the program to crash~~
 
 * I've lost some text at the end of stories
+
+## Notes:
+
+* If random bugs are popping up when entering bookView, consider deleting the sytem data folder. Indexes may be messed up

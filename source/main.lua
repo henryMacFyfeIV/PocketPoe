@@ -1,7 +1,7 @@
 import 'CoreLibs/object'
 import 'CoreLibs/graphics'
 
-playdate.display.setRefreshRate(14)
+playdate.display.setRefreshRate(20)
 local gfx <const> = playdate.graphics
 
 local books = {}
@@ -9,7 +9,7 @@ local books = {}
 local filePlayer = playdate.sound.fileplayer.new("rain", 1000)
 
 local filePlayerOn = true
-filePlayer:play(50)
+filePlayer:play(1)
 
 local screenWidth = playdate.display.getWidth()
 local screenHeight = playdate.display.getHeight()
@@ -153,7 +153,7 @@ function playdate.update()
 				end
 			end
 		end
-
+		
 		drawPage(books[cursor].storyChunk, bookIndexes[books[cursor].title])
 	end
 end
@@ -201,7 +201,7 @@ function playdate.BButtonDown()
 		    filePlayer:stop()
 		    filePlayerOn = false
 		else
-		    filePlayer:play(50)
+		    filePlayer:play(1)
 		    filePlayerOn = true
         end
 	end
