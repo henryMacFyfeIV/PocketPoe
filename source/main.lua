@@ -24,12 +24,12 @@ local shelfDimensions = {
 function createBooks(stories)
 	for storyKey, storyValue in pairs(stories) do
 		local newBook = {}
-		local bookHeight = math.random(100, 130)
-		local bookWidth = math.random(30, 50)
+		local bookHeight = math.random(110, 135)
+		local bookWidth = math.random(29, 35)
 
 		if #books == 0 then
 			newBook = {
-				x = 5,
+				x = 25,
 				y = 195 - bookHeight,
 				w = bookWidth,
 				h = bookHeight,
@@ -256,3 +256,4 @@ function chunkStories()
 
 end
 
+-- chunkStories()
