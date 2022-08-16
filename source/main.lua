@@ -9,7 +9,7 @@ local books = {}
 local filePlayer = playdate.sound.fileplayer.new("rain", 1000)
 
 local filePlayerOn = true
-filePlayer:play(1)
+filePlayer:play(50)
 
 local screenWidth = playdate.display.getWidth()
 local screenHeight = playdate.display.getHeight()
