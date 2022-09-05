@@ -1,44 +1,49 @@
-The Masque of the Red Death THE "Red Death" had 
-long devastated the country. No pestilence had 
-ever been so fatal, or so hideous. Blood was its 
-Avator and its seal -- the redness and the horror 
-of blood. There were sharp pains, and sudden 
-dizziness, and then profuse bleeding at the pores, 
-with dissolution. The scarlet stains upon the body 
-and especially upon the face of the victim, were the 
-pest ban which shut him out from the aid and from 
-the sympathy of his fellow-men. And the whole 
-seizure, progress and termination of the disease, 
-were the incidents of half an hour. But the Prince 
-Prospero was happy and dauntless and sagacious. 
-When his dominions were half depopulated, he 
-summoned to his presence a thousand hale and 
-light-hearted friends from among the knights and 
-dames of his court, and with these retired to the 
-deep seclusion of one of his castellated abbeys. 
-This was an extensive and magnificent structure, 
-the creation of the prince's own eccentric yet 
-august taste. A strong and lofty wall girdled it in. 
-This wall had gates of iron. The courtiers, having 
-entered, brought furnaces and massy hammers 
-and welded the bolts. They resolved to leave means 
-neither of ingress or egress to the sudden 
-impulses of despair or of frenzy from within. The 
-abbey was amply provisioned. With such 
-precautions the courtiers might bid defiance to 
-contagion. The external world could take care of 
-itself. In the meantime it was folly to grieve, or to 
-think. The prince had provided all the appliances of 
-pleasure. There were buffoons, there were 
-improvisatori, there were ballet-dancers, there 
-were musicians, there was Beauty, there was wine. 
-All these and security were within. Without was the 
-"Red Death." It was toward the close of the fifth or 
+The Masque of the Red Death 
+
+THE "Red Death" had long devastated the country.
+No pestilence had ever been so fatal, or so hideous. 
+Blood was its Avator and its seal -- the redness 
+and the horror of blood. There were sharp pains, 
+and sudden dizziness, and then profuse bleeding at 
+the pores, with dissolution. The scarlet stains upon
+the body and especially upon the face of the victim, 
+were the pest ban which shut him out from the aid 
+and from the sympathy of his fellow-men. And the 
+whole seizure, progress and termination of the 
+disease, were the incidents of half an hour.
+
+        But the Prince Prospero was happy and 
+dauntless and sagacious. When his dominions were 
+half depopulated, he summoned to his presence a 
+thousand hale and light-hearted friends from among
+the knights and dames of his court, and with these
+retired to the deep seclusion of one of his 
+castellated abbeys. This was an extensive and 
+magnificent structure, the creation of the prince's
+own eccentric yet august taste. A strong and lofty 
+wall girdled it in. This wall had gates of iron. 
+The courtiers, having entered, brought furnaces 
+and massy hammers and welded the bolts. They 
+resolved to leave means neither of ingress or 
+egress to the sudden impulses of despair or of 
+frenzy from within. The abbey was amply 
+provisioned. With such precautions the courtiers 
+might bid defiance to contagion. The external world 
+could take care of itself. In the meantime it was 
+folly to grieve, or to think. The prince had 
+provided all the appliances of pleasure. There 
+were buffoons, there were improvisatori, there 
+were ballet-dancers, there were musicians, there
+was Beauty, there was wine. All these and security
+were within. Without was the "Red Death."
+
+        It was toward the close of the fifth or 
 sixth month of his seclusion, and while the 
 pestilence raged most furiously abroad, that the 
 Prince Prospero entertained his thousand friends 
 at a masked ball of the most unusual magnificence. 
-It was a voluptuous scene, that masquerade. But 
+
+        It was a voluptuous scene, that masquerade. But 
 first let me tell of the rooms in which it was held. 
 There were seven -- an imperial suite. In many 
 palaces, however, such suites form a long and 
@@ -88,7 +93,9 @@ dark hangings through the blood-tinted panes, was
 ghastly in the extreme, and produced so wild a look 
 upon the countenances of those who entered, that 
 there were few of the company bold enough to set 
-foot within its precincts at all. It was in this 
+foot within its precincts at all.
+
+        It was in this 
 apartment, also, that there stood against the 
 western wall, a gigantic clock of ebony. Its pendulum 
 swung to and fro with a dull, heavy, monotonous 
@@ -117,7 +124,9 @@ sixty minutes, (which embrace three thousand and
 six hundred seconds of the Time that flies,) there 
 came yet another chiming of the clock, and then 
 were the same disconcert and tremulousness and 
-meditation as before. But, in spite of these things, 
+meditation as before.
+
+        But, in spite of these things, 
 it was a gay and magnificent revel. The tastes of 
 the duke were peculiar. He had a fine eye for colors 
 and effects. He disregarded the decora of mere 
@@ -126,7 +135,8 @@ conceptions glowed with barbaric lustre. There are
 some who would have thought him mad. His 
 followers felt that he was not. It was necessary to 
 hear and see and touch him to be sure that he was 
-not. He had directed, in great part, the moveable 
+not. 
+        He had directed, in great part, the moveable 
 embellishments of the seven chambers, upon 
 occasion of this great fête; and it was his own 
 guiding taste which had given character to the 
@@ -165,7 +175,9 @@ upon the sable carpet, there comes from the near
 clock of ebony a muffled peal more solemnly 
 emphatic than any which reaches their ears who 
 indulge in the more remote gaieties of the other 
-apartments. But these other apartments were 
+apartments. 
+        
+        But these other apartments were 
 densely crowded, and in them beat feverishly the 
 heart of life. And the revel went whirlingly on, until 
 at length there commenced the sounding of 
@@ -188,7 +200,9 @@ presence having spread itself whisperingly around,
 there arose at length from the whole company a 
 buzz, or murmur, expressive of disapprobation and 
 surprise -- then, finally, of terror, of horror, and 
-of disgust. In an assembly of phantasms such as I 
+of disgust. 
+
+        In an assembly of phantasms such as I 
 have painted, it may well be supposed that no 
 ordinary appearance could have excited such 
 sensation. In truth the masquerade license of the 
@@ -213,25 +227,31 @@ approved, by the mad revellers around. But the
 mummer had gone so far as to assume the type of 
 the Red Death. His vesture was dabbled in blood -- 
 and his broad brow, with all the features of the 
-face, was besprinkled with the scarlet horror. 
-When the eyes of Prince Prospero fell upon this 
+face, was besprinkled with the scarlet horror.
+
+ 
+        When the eyes of Prince Prospero fell upon this 
 spectral image (which with a slow and solemn 
 movement, as if more fully to sustain its role, 
 stalked to and fro among the waltzers) he was 
 seen to be convulsed, in the first moment with a 
 strong shudder either of terror or distaste; but, in 
-the next, his brow reddened with rage. "Who 
-dares?" he demanded hoarsely of the courtiers 
+the next, his brow reddened with rage. 
+
+        "Who dares?" he demanded hoarsely of the courtiers 
 who stood near him -- "who dares insult us with this 
 blasphemous mockery? Seize him and unmask him 
 -- that we may know whom we have to hang at 
-sunrise, from the battlements!" It was in the 
-eastern or blue chamber in which stood the Prince 
+sunrise, from the battlements!" 
+
+        It was in the eastern or blue chamber in which stood the Prince 
 Prospero as he uttered these words. They rang 
 throughout the seven rooms loudly and clearly -- 
 for the prince was a bold and robust man, and the 
 music had become hushed at the waving of his 
-hand. It was in the blue room where stood the 
+hand. 
+
+        It was in the blue room where stood the 
 prince, with a group of pale courtiers by his side. 
 At first, as he spoke, there was a slight rushing 
 movement of this group in the direction of the 
@@ -273,7 +293,9 @@ motionless within the shadow of the ebony clock,
 gasped in unutterable horror at finding the grave 
 cerements and corpse-like mask which they 
 handled with so violent a rudeness, untenanted by 
-any tangible form. And now was acknowledged the 
+any tangible form. 
+
+        And now was acknowledged the 
 presence of the Red Death. He had come like a thief 
 in the night. And one by one dropped the revellers 
 in the blood-bedewed halls of their revel, and died 
@@ -281,4 +303,4 @@ each in the despairing posture of his fall. And the
 life of the ebony clock went out with that of the 
 last of the gay. And the flames of the tripods 
 expired. And Darkness and Decay and the Red 
-Death held illimitable dominion over 
+Death held illimitable dominion over over all.
