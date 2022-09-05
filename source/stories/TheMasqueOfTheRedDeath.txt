@@ -43,9 +43,9 @@ pestilence raged most furiously abroad, that the
 Prince Prospero entertained his thousand friends 
 at a masked ball of the most unusual magnificence. 
 
-        It was a voluptuous scene, that masquerade. But 
-first let me tell of the rooms in which it was held. 
-There were seven -- an imperial suite. In many 
+        It was a voluptuous scene, that masquerade. 
+But first let me tell of the rooms in which it was 
+held. There were seven -- an imperial suite. In many 
 palaces, however, such suites form a long and 
 straight vista, while the folding doors slide back 
 nearly to the walls on either hand, so that the view 
@@ -56,8 +56,8 @@ apartments were so irregularly disposed that the
 vision embraced but little more than one at a time. 
 There was a sharp turn at every twenty or thirty 
 yards, and at each turn a novel effect. To the right 
-and left, in the middle of each wall, a tall and narrow 
-Gothic window looked out upon a closed corridor 
+and left, in the middle of each wall, a tall and 
+narrow Gothic window looked out upon a closed corridor 
 which pursued the windings of the suite. These 
 windows were of stained glass whose color varied 
 in accordance with the prevailing hue of the 
@@ -95,22 +95,21 @@ upon the countenances of those who entered, that
 there were few of the company bold enough to set 
 foot within its precincts at all.
 
-        It was in this 
-apartment, also, that there stood against the 
-western wall, a gigantic clock of ebony. Its pendulum 
-swung to and fro with a dull, heavy, monotonous 
-clang; and when the minute-hand made the circuit 
-of the face, and the hour was to be stricken, there 
-came from the brazen lungs of the clock a sound 
-which was clear and loud and deep and exceedingly 
-musical, but of so peculiar a note and emphasis 
-that, at each lapse of an hour, the musicians of the 
-orchestra were constrained to pause, momentarily, 
-in their performance, to harken to the sound; and 
-thus the waltzers perforce ceased their 
-evolutions; and there was a brief disconcert of the 
-whole gay company; and, while the chimes of the 
-clock yet rang, it was observed that the giddiest 
+        It was in this apartment, also, that there
+stood against the western wall, a gigantic clock of
+ ebony. Its pendulum swung to and fro with a dull,
+heavy, monotonous clang; and when the minute-hand
+made the circuit of the face, and the hour was to
+be stricken, there came from the brazen lungs of
+the clock a sound which was clear and loud and
+deep and exceedingly musical, but of so peculiar
+a note and emphasis that, at each lapse of an hour,
+the musicians of the orchestra were constrained to
+pause, momentarily, in their performance, to harken
+to the sound; and thus the waltzers perforce ceased
+their evolutions; and there was a brief disconcert
+of the whole gay company; and, while the chimes of
+the clock yet rang, it was observed that the giddiest 
 grew pale, and the more aged and sedate passed 
 their hands over their brows as if in confused 
 revery or meditation. But when the echoes had 
@@ -156,7 +155,7 @@ hue from the rooms, and causing the wild music of
 the orchestra to seem as the echo of their steps. 
 And, anon, there strikes the ebony clock which 
 stands in the hall of the velvet. And then, for a 
-moment, all is still, and all is silent save the voice of 
+moment, all is still, and all is silent save the voice of
 the clock. The dreams are stiff-frozen as they 
 stand. But the echoes of the chime die away -- 
 they have endured but an instant -- and a light, 
