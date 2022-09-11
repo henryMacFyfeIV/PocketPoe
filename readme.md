@@ -6,7 +6,16 @@ PocketPoe is a program for the [playdate console](https://play.date) that lets y
 ![Library view](./library.png)
 
 
-![Book view](/.book.png)
+![Book view](./book.png)
+
+## Features & Controls
+- While in the library view, toggle rain sounds by pressing 'B'.
+- 'Left' and 'Right' on d-pad to select browse books in the library.
+- press 'A' to view a book
+- 'Up' and 'Down' to move lines in the book view.
+- The 'Crank' can also be used to scroll through a book. 
+- Progress is saved while reading a story.
+
 
 ## Running PocketPoe
 > rm -rf pocket Pocket\ Poe.pdx/ ; pdc source "Pocket Poe"; open Pocket\ Poe.pdx/ ; cp -r Pocket\ Poe.pdx/ ../../Disk/Games/
