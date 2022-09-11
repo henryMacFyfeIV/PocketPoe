@@ -1,7 +1,7 @@
 # Readme
 
 ## Description
-PocketPoe is a program for the [playdate console](https://play.date) that lets you read an assortment of short stories by author Edger Allan Poe.
+PocketPoe is a program for the [playdate console](https://play.date) that lets you read an assortment of short stories by author Edgar Allan Poe.
 
 ![Library view](./library.png)
 
