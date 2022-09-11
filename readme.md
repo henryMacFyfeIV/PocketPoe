@@ -14,6 +14,7 @@ PocketPoe is a program for the [playdate console](https://play.date) that lets y
 - press 'A' to view a book
 - 'Up' and 'Down' to move lines in the book view.
 - The 'Crank' can also be used to scroll through a book. 
+- Pressing 'B' will exit book view and return you to the library. 
 - Progress is saved while reading a story.
 
 
