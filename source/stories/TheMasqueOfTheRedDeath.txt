@@ -43,57 +43,57 @@ pestilence raged most furiously abroad, that the
 Prince Prospero entertained his thousand friends 
 at a masked ball of the most unusual magnificence. 
 
-        It was a voluptuous scene, that masquerade. 
-But first let me tell of the rooms in which it was 
-held. There were seven -- an imperial suite. In many 
-palaces, however, such suites form a long and 
-straight vista, while the folding doors slide back 
-nearly to the walls on either hand, so that the view 
-of the whole extent is scarcely impeded. Here the 
-case was very different; as might have been 
-expected from the duke's love of the bizarre. The 
-apartments were so irregularly disposed that the 
-vision embraced but little more than one at a time. 
-There was a sharp turn at every twenty or thirty 
-yards, and at each turn a novel effect. To the right 
-and left, in the middle of each wall, a tall and 
-narrow Gothic window looked out upon a closed corridor 
-which pursued the windings of the suite. These 
-windows were of stained glass whose color varied 
-in accordance with the prevailing hue of the 
-decorations of the chamber into which it opened. 
-That at the eastern extremity was hung, for 
-example, in blue -- and vividly blue were its windows. 
-The second chamber was purple in its ornaments 
-and tapestries, and here the panes were purple. 
-The third was green throughout, and so were the 
-casements. The fourth was furnished and lighted 
-with orange -- the fifth with white -- the sixth with 
-violet. The seventh apartment was closely 
-shrouded in black velvet tapestries that hung all 
-over the ceiling and down the walls, falling in heavy 
-folds upon a carpet of the same material and hue. 
-But in this chamber only, the color of the windows 
-failed to correspond with the decorations. The 
-panes here were scarlet -- a deep blood color. Now 
-in no one of the seven apartments was there any 
-lamp or candelabrum, amid the profusion of golden 
-ornaments that lay scattered to and fro or 
-depended from the roof. There was no light of any 
-kind emanating from lamp or candle within the suite 
-of chambers. But in the corridors that followed the 
-suite, there stood, opposite to each window, a 
-heavy tripod, bearing a brazier of fire, that 
-projected its rays through the tinted glass and so 
-glaringly illumined the room. And thus were 
-produced a multitude of gaudy and fantastic 
-appearances. But in the western or black chamber 
-the effect of the fire-light that streamed upon the 
-dark hangings through the blood-tinted panes, was 
-ghastly in the extreme, and produced so wild a look 
-upon the countenances of those who entered, that 
-there were few of the company bold enough to set 
-foot within its precincts at all.
+        It was a voluptuous scene, that 
+masquerade. But first let me tell of the rooms in 
+which it was held. There were seven -- an imperial 
+suite. In many palaces, however, such suites form a 
+long and straight vista, while the folding doors 
+slide back nearly to the walls on either hand, so
+that the view of the whole extent is scarcely 
+impeded. Here the case was very different; as might
+have been expected from the duke's love of the 
+bizarre. The apartments were so irregularly 
+disposed that the vision embraced but little more
+than one at a time. There was a sharp turn at every
+twenty or thirty yards, and at each turn a novel
+effect. To the right and left, in the middle of 
+each wall, a tall and narrow Gothic window looked
+out upon a closed corridor which pursued the 
+windings of the suite. These windows were of
+stained glass whose color varied in accordance with
+the prevailing hue of the decorations of the
+chamber into which it opened. That at the eastern
+extremity was hung, for example, in blue -- and
+vividly blue were its windows. The second chamber
+was purple in its ornaments and tapestries, and
+here the panes were purple. The third was green
+throughout, and so were the casements. The fourth
+was furnished and lighted with orange -- the fifth
+with white -- the sixth with violet. The seventh
+apartment was closely shrouded in black velvet
+tapestries that hung all over the ceiling and down
+the walls, falling in heavy folds upon a carpet
+of the same material and hue. But in this chamber
+only, the color of the windows failed to correspond
+with the decorations. The panes here were scarlet
+-- a deep blood color. Now in no one of the seven
+apartments was there any lamp or candelabrum,
+amid the profusion of golden ornaments that lay
+scattered to and fro or depended from the roof.
+There was no light of any kind emanating from lamp
+or candle within the suite of chambers. But in the
+corridors that followed the suite, there stood,
+opposite to each window, a heavy tripod, bearing
+a brazier of fire, that projected its rays through
+the tinted glass and so glaringly illumined the room.
+And thus were produced a multitude of gaudy and
+fantastic appearances. But in the western or black
+chamber the effect of the fire-light that streamed
+upon the dark hangings through the blood-tinted
+panes, was ghastly in the extreme, and produced so
+wild a look upon the countenances of those who 
+entered, that there were few of the company bold
+enough to set foot within its precincts at all.
 
         It was in this apartment, also, that there
 stood against the western wall, a gigantic clock of
@@ -106,40 +106,41 @@ deep and exceedingly musical, but of so peculiar
 a note and emphasis that, at each lapse of an hour,
 the musicians of the orchestra were constrained to
 pause, momentarily, in their performance, to harken
-to the sound; and thus the waltzers perforce ceased
-their evolutions; and there was a brief disconcert
-of the whole gay company; and, while the chimes of
-the clock yet rang, it was observed that the giddiest 
-grew pale, and the more aged and sedate passed 
-their hands over their brows as if in confused 
-revery or meditation. But when the echoes had 
-fully ceased, a light laughter at once pervaded the 
-assembly; the musicians looked at each other and 
-smiled as if at their own nervousness and folly, and 
-made whispering vows, each to the other, that the 
-next chiming of the clock should produce in them 
-no similar emotion; and then, after the lapse of 
-sixty minutes, (which embrace three thousand and 
-six hundred seconds of the Time that flies,) there 
-came yet another chiming of the clock, and then 
-were the same disconcert and tremulousness and 
-meditation as before.
+to the sound; and thus the waltzers perforce 
+ceased their evolutions; and there was a brief 
+disconcert of the whole gay company; and, while 
+the chimes of the clock yet rang, it was observed
+that the giddiest grew pale, and the more aged 
+and sedate passed their hands over their brows as
+if in confused revery or meditation. But when 
+the echoes had fully ceased, a light laughter at
+once pervaded the assembly; the musicians looked
+at each other and smiled as if at their own 
+nervousness and folly, and made whispering vows,
+each to the other, that the next chiming of the
+clock should produce in them no similar emotion;
+and then, after the lapse of sixty minutes,
+(which embrace three thousand and six hundred 
+seconds of the Time that flies,) there came yet
+another chiming of the clock, and then were the
+same disconcert and tremulousness and meditation
+as before.
 
-        But, in spite of these things, 
-it was a gay and magnificent revel. The tastes of 
-the duke were peculiar. He had a fine eye for colors 
-and effects. He disregarded the decora of mere 
-fashion. His plans were bold and fiery, and his 
-conceptions glowed with barbaric lustre. There are 
-some who would have thought him mad. His 
-followers felt that he was not. It was necessary to 
-hear and see and touch him to be sure that he was 
-not. 
-        He had directed, in great part, the moveable 
-embellishments of the seven chambers, upon 
-occasion of this great fête; and it was his own 
-guiding taste which had given character to the 
-masqueraders. Be sure they were grotesque. 
+        But, in spite of these things, it was a gay
+and magnificent revel. The tastes of the duke were
+peculiar. He had a fine eye for colors and effects. 
+He disregarded the decora of mere fashion. His
+plans were bold and fiery, and his conceptions 
+glowed with barbaric lustre. There are some who
+would have thought him mad. His followers felt
+that he was not. It was necessary to hear and see
+and touch him to be sure that he was not. 
+
+        He had directed, in great part, the 
+moveable embellishments of the seven chambers,
+upon occasion of this great fete; and it was 
+his own guiding taste which had given character
+to the masqueraders. Be sure they were grotesque. 
 There were much glare and glitter and piquancy 
 and phantasm -- much of what has been since seen 
 in "Hernani." There were arabesque figures with 
@@ -229,26 +230,28 @@ and his broad brow, with all the features of the
 face, was besprinkled with the scarlet horror.
 
  
-        When the eyes of Prince Prospero fell upon this 
-spectral image (which with a slow and solemn 
-movement, as if more fully to sustain its role, 
-stalked to and fro among the waltzers) he was 
-seen to be convulsed, in the first moment with a 
-strong shudder either of terror or distaste; but, in 
-the next, his brow reddened with rage. 
+        When the eyes of Prince Prospero fell
+upon this spectral image (which with a slow 
+and solemn movement, as if more fully to sustain
+its role, stalked to and fro among the waltzers)
+he was seen to be convulsed, in the first moment
+with a strong shudder either of terror or 
+distaste; but, in the next, his brow reddened
+with rage. 
 
-        "Who dares?" he demanded hoarsely of the courtiers 
-who stood near him -- "who dares insult us with this 
-blasphemous mockery? Seize him and unmask him 
--- that we may know whom we have to hang at 
-sunrise, from the battlements!" 
+        "Who dares?" he demanded hoarsely of
+the courtiers who stood near him -- "who 
+dares insult us with this blasphemous mockery?
+Seize him and unmask him -- that we may know
+whom we have to hang at sunrise, from the 
+battlements!" 
 
-        It was in the eastern or blue chamber in which stood the Prince 
-Prospero as he uttered these words. They rang 
-throughout the seven rooms loudly and clearly -- 
-for the prince was a bold and robust man, and the 
-music had become hushed at the waving of his 
-hand. 
+        It was in the eastern or blue chamber in
+which stood the Prince Prospero as he uttered
+these words. They rang throughout the seven
+rooms loudly and clearly -- for the prince was
+a bold and robust man, and the music had become
+hushed at the waving of his hand. 
 
         It was in the blue room where stood the 
 prince, with a group of pale courtiers by his side. 
