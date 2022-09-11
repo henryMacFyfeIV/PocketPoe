@@ -1,7 +1,7 @@
 # Readme
 
 ## Description
-PocketPoe is a program for the [playdate console](https://play.date) that lets you read an assortment of short stories by author Edger Allen Poe.
+PocketPoe is a program for the [playdate console](https://play.date) that lets you read an assortment of short stories by author Edger Allan Poe.
 
 ![Library view](./library.png)
 
@@ -9,12 +9,12 @@ PocketPoe is a program for the [playdate console](https://play.date) that lets y
 ![Book view](./book.png)
 
 ## Features & Controls
-- While in the library view, toggle rain sounds by pressing 'B'.
-- 'Left' and 'Right' on d-pad to select browse books in the library.
-- press 'A' to view a book
-- 'Up' and 'Down' to move lines in the book view.
+- While in the library, toggle rain sounds by pressing 'B'.
+- 'Left' and 'Right' on d-pad to browse books in the library.
+- press 'A' to view a book.
+- 'Up' and 'Down' to move lines while viewing a book.
 - The 'Crank' can also be used to scroll through a book. 
-- Pressing 'B' will exit book view and return you to the library. 
+- Pressing 'B' will exit a book and return you to the library. 
 - Progress is saved while reading a story.
 
 
